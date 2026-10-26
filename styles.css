@@ -1203,3 +1203,43 @@ svg {
     transform: none;
   }
 }
+
+
+/* Brand logo */
+.brand-logo-link {
+  flex: 0 0 auto;
+}
+
+.brand-logo {
+  width: clamp(230px, 24vw, 320px);
+  height: 58px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.footer-logo {
+  width: min(100%, 300px);
+  height: auto;
+  padding: 8px 12px;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+@media (max-width: 980px) {
+  .brand-logo {
+    width: 220px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 680px) {
+  .brand-logo {
+    width: 168px;
+    height: 44px;
+  }
+
+  .footer-logo {
+    width: 240px;
+    height: auto;
+  }
+}
